@@ -1,0 +1,639 @@
+/* Réinitialisation des styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-attachment: fixed;
+}
+
+.navbar-nav {
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+img {
+    margin-left: 30px;
+    border-radius: 25px;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px;
+    margin: 12px;
+    color: gold;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    border-bottom: 2px solid gold;
+    border-left: 2px solid rgba(15, 15, 240, 0.913);
+    background-color: rgb(74, 72, 72);
+    transform: rotate(2deg); /* Correct way to rotate */
+    transition: all 2s ease; /* Apply transition to all properties, including transform */
+}
+
+.navbar-nav .nav-link {
+    cursor: url('assests\imgs\utensil_screwdriver_repair_home_drills_tools_construction_machine_drilling_icon_262815.png'), auto; /* Set custom cursor for nav-link */
+}
+
+
+.animat {
+    box-shadow: 2px 2px 2px 0 blue;
+    animation: animate infinite 1s;
+}
+
+@keyframes animate {
+    0%, 100% { scale: 1; }
+    25%, 75% { scale: 1.1; }
+    50% { scale: 1.2; }
+}
+
+/* ================== SECTION HOME ================== */
+.hero {
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    background-attachment: fixed;
+    border-radius: 10px 12px 40px 40px;
+}
+
+.bgclip {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+}
+
+.gold-text {
+    color: gold;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.animate-text {
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+
+.description {
+    color: aliceblue;
+    font-size: 1rem;
+    line-height: 1.4;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+    animation-delay: 1s;
+    z-index: 3;
+}
+
+.btn-custom {
+    background-color: gold;
+    color: #121212;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: white;
+    color: #121212;
+    transform: scale(1.05);
+}
+
+/* Animation du bras robotique */
+.robot-arm {
+    position: absolute;
+    top: 100px;
+    left: -70px;
+    width: 400px;
+    opacity: 1;
+    transform-origin: top left;
+    animation: wave 2s infinite ease-in-out;
+}
+ /*section a propos*/
+.about-section {
+    color: #FFFFFF;
+    padding: 60px 0;
+}
+.about-section h2 {
+    color: #DAA520;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+h2 {
+    color: #DAA520;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.about-section h2:hover{
+    transform: translateX(+200px);
+    scale: 1.1;
+    transition: 2s ease-out;
+}
+h2:hover{
+    transform: translateX(+200px);
+    scale: 1.1;
+    transition: 2s ease-out;
+}
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.row{
+    justify-content: center;
+    justify-self:center;
+    justify-items: center;
+}
+.team-member {
+    text-align: center;
+    height: 400px;
+   
+    width: 250px;
+    margin-bottom: 30px;
+    background: #ffffff75;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.6); /* Ombre bleue */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+.team-member:hover{
+    scale: 1.1;
+    box-shadow: 0 6px 15px rgba(30, 144, 255, 0.9); /* Ombre bleue plus forte */
+       
+
+}
+.team-member img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.team-info {
+    padding: 15px;
+}
+.team-info h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1E90FF;
+}
+.team-info button {
+    background-color: #DAA520;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.team-info button:hover {
+    background-color: #C98A1F;
+
+}
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+}
+.carousel-caption h5 {
+    font-size: 22px;
+    color: #DAA520;
+}
+.carousel-caption p {
+    font-size: 16px;
+}
+h3{
+    margin: 30px;
+}
+/*section Evenement*/
+.events-section {
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+.events-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Container Grid */
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+/* Event Card Styles */
+.event-card {
+    background: rgba(255, 255, 255, 0.445);
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-card-body {
+    padding: 20px;
+}
+
+.event-card-body h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #1E90FF;
+}
+
+.event-card-body p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.event-card-body a {
+    color: #DAA520;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.event-card-body a:hover {
+    color: #1E90FF;
+    text-decoration: underline;
+}
+/*ressources*/
+.resources-section {
+    padding: 40px 20px;
+
+}
+
+.resources-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resource-category {
+    margin-bottom: 30px;
+    color: #1E90FF;
+    font-weight: bolder;
+}
+
+.resource-category h3 {
+    color: #333;
+    margin-bottom: 10px;
+    color: #1E90FF;
+    font-weight: bolder;
+}
+
+.resource-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resource-category ul li {
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+.resource-category ul li a {
+    text-decoration: none;
+    color:white;
+    transition: color 0.3s;
+}
+
+.resource-category ul li a:hover {
+    color: #DAA520;
+    scale: 1.2;
+}
+
+
+/*contact*/
+/* Contact Section Styles */
+.contact-section {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+/* Style for social-links container */
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for each social icon */
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon img {
+    width: 50px;  /* Adjust size as per design */
+    height: auto;
+}
+
+/* Hover effect */
+.social-icon:hover {
+    transform: scale(1.1);  /* Makes the icon grow when hovered */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  /* Adds shadow on hover */
+}
+
+/* Add animation effect */
+.social-icon.instagram:hover {
+    animation: instagramAnimation 0.6s ease-in-out forwards;
+}
+
+.social-icon.whatsapp:hover {
+    animation: whatsappAnimation 0.6s ease-in-out forwards;
+}
+
+/* Instagram specific animation */
+@keyframes instagramAnimation {
+    0% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+}
+
+/* WhatsApp specific animation */
+@keyframes whatsappAnimation {
+    0% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+}
+/* Separator Line */
+.contact-info::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    width: 1px;
+    height: 200px;
+    background-color: #00bcd4;
+    transform: translateX(-50%);
+}
+
+/* Contact Form */
+.contact-form {
+    background: none;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.contact-form .form-control:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
+
+.contact-form .btn-submit {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form .btn-submit:hover {
+    background-color: #0288d1;
+}
+
+
+
+/*footer*/
+/* Footer Container */
+footer {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Footer layout */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Sections */
+.footer-about, .footer-social, .footer-contact {
+    padding: 20px;
+}
+
+.footer-about h3, .footer-social h3, .footer-contact h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Links styling */
+footer a {
+    color: #4c8bf5;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Links Style */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Social Icon styling */
+.social-icon img {
+    width: 40px;  /* Adjust the size of the icons */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    .footer-about, .footer-social, .footer-contact {
+        text-align: left;
+    }
+}
+
+
+
+
+/* Fade In Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(-15deg); }
+}
+/* Fade In */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Zoom In */
+@keyframes zoomIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 992px) {
+    
+    .animate-text { font-size: 2.5rem; }
+    .description { font-size: 1rem; }
+    .robot-arm { width: 80px;
+                display: none; }
+    .bgclip { width: 100%; height: auto; }
+}
+@media (max-width: 892px) {
+    
+    .animate-text { font-size: 2.5rem; }
+    .description { font-size: 1rem; }
+    .robot-arm { width: 80px;
+                display: none; }
+    .bgclip { width: 100%; height: auto; }
+}
+
+@media (max-width: 768px) {
+    .hero { flex-direction: column; text-align: center; }
+    .robot-arm { width: 70px;display: none; }
+    .bgclip { width: auto; height: 100%; }
+    .contact-section {
+        padding: 30px 10px;
+    }
+
+    .contact-section {
+        padding: 30px 10px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .animate-text { font-size: 2.8rem; }
+    .description { font-size: 1.1rem; }
+    .robot-arm { width: 90px; }
+}

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Robothings FSTm</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="The official website of robotics club at the faculty of science and technology mohamedia">
+        <meta name="author" content="Robothings FSTm">
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="assests/css/style.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <!-- place navbar here -->
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">  <!-- Assure-toi que c'est bien là -->
+                    <a class="navbar-brand" href="#">
+                        <img src="assests/imgs/fstmrobothings.png" alt="Bootstrap" width="44" height="44">
+                      </a>
+                    <!-- Toggle Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <img src="assests\imgs\utensil_screwdriver_repair_home_drills_tools_construction_machine_drilling_icon_262815.png" alt="Image" class="custom-cursor">
+
+                    <!-- Menu -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">  À propos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#event">Événements</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#res">Ressources</a></li>
+                            <li class="nav-item animat"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+        <main>
+            <video autoplay loop muted  plays-inline class="bgclip"><source src="assests\vids\854228-hd_1920_1080_30fps.mp4" type="video/mp4"></video>
+            <section id="home" class="hero d-flex align-items-center" id="home">
+               
+                <div class="container">
+                    <div class="row align-items-center">
+                         <!-- Image du bras robotique-->
+                        <div class="col-lg-6 text-center">
+                            <img src="assests\imgs\cefbcd68-904b-40ba-a746-11c70218f3e2-1-removebg-preview.png" alt="Bras Robotique" class="robot-arm">
+                        </div>
+                         
+                         
+                    
+                        <!-- Texte -->
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="animate-text">Bienvenue en <span class="gold-text">FSTM</span></h1>
+                            <p class="description">
+                                Notre club ROBOTHINGS  est un espace dédié aux passionnés de robotique et d’innovation.
+                                Nous explorons le monde de l’électronique, de la programmation et de la mécatronique
+                                en concevant des projets variés comme des robots suiveurs de ligne, des bras robotiques intelligents et des drones autonomes.
+                                <br><br>
+                                Grâce à des ateliers pratiques et des défis techniques, nous permettons aux étudiants
+                                de développer leurs compétences en Arduino, Raspberry Pi, intelligence artificielle et fabrication numérique.
+                                <br><br>
+                                Rejoignez-nous et participez à cette aventure technologique !
+                            </p>
+                            <a href="pages\apropos.html" id="scrollLink" class="btn btn-custom mt-3">Découvrir le club</a>
+                        </div>
+            
+                    </div>  
+                </div>
+            </section>
+<!-- Section À propos -->
+            <section class="about-section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>À propos de notre Club de Robotique</h2>
+                            <p>Fondé en [année], notre club a pour mission de promouvoir l'innovation et l'apprentissage en robotique. Nous croyons en la puissance de la collaboration et de la créativité pour repousser les limites de la technologie.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-4">
+                            <h3>Notre Histoire</h3>
+                            <p>Depuis notre création, nous avons participé à de nombreuses compétitions et mené divers projets innovants, tels que [nom du projet] et [nom du projet].</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3>Nos Valeurs</h3>
+                            <p>Nous valorisons l'innovation, le travail d'équipe et l'apprentissage continu, en encourageant nos membres à explorer de nouvelles idées et technologies.</p>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-lg-12 text-center">
+                                <h3>Nos Projets</h2>
+                            </div>
+                            <div class="col-lg-12">
+                                <div id="carouselProjets" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <!-- Projet 1 -->
+                                        <div class="carousel-item active">
+                                            <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" class="d-block w-100" alt="Projet 1">
+                                            <div class="carousel-caption">
+                                                <h5>Robot Suiveur de Ligne</h5>
+                                                <p>Un robot intelligent capable de suivre une ligne tracée au sol avec précision.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Projet 2 -->
+                                        <div class="carousel-item">
+                                            <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" class="d-block w-100" alt="Projet 2">
+                                            <div class="carousel-caption">
+                                                <h5>Bras Robotique</h5>
+                                                <p>Un bras robotisé conçu pour simuler les mouvements humains et effectuer des tâches précises.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Projet 3 -->
+                                        <div class="carousel-item">
+                                            <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" class="d-block w-100" alt="Projet 3">
+                                            <div class="carousel-caption">
+                                                <h5>Drone Autonome</h5>
+                                                <p>Un drone intelligent pouvant naviguer sans intervention humaine grâce à des capteurs avancés.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Boutons de navigation -->
+                                    <a class="carousel-control-prev" href="#carouselProjets" role="button" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselProjets" role="button" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-12 text-center">
+                            <h3>Notre Équipe</h2>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-member">
+                                <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" alt="Membre 1">
+                                <div class="team-info">
+                                    <h4>President</h4>
+                                    <button>En savoir plus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-member">
+                                <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" alt="Membre 2">
+                                <div class="team-info">
+                                    <h4>Vice-President</h4>
+                                    <button>En savoir plus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-member">
+                                <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" alt="Membre 3">
+                                <div class="team-info">
+                                    <h4>Secretaire</h4>
+                                    <button>En savoir plus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-member">
+                                <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" alt="Membre 4">
+                                <div class="team-info">
+                                    <h4>RH</h4>
+                                    <button>En savoir plus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-member">
+                                <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" alt="Membre 4">
+                                <div class="team-info">
+                                    <h4>Responsable Techniqhe</h4>
+                                    <button>En savoir plus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-member">
+                                <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" alt="Membre 4">
+                                <div class="team-info">
+                                    <h4>Trésorerie et responsable de sponsoring</h4>
+                                    <button>En savoir plus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-member">
+                                <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" alt="Membre 4">
+                                <div class="team-info">
+                                    <h4>Design et media</h4>
+                                    <button>En savoir plus</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+                    <!-- Section Événements -->
+           <!-- Section Événements -->
+            <section class="events-section" id="event">
+                <h2 >Événements de Robotique </h2>
+                <div class="events-container">
+                    <!-- Événement 1 -->
+                    <div class="event-card">
+                        <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" alt="Coupe de France de Robotique">
+                        <div class="event-card-body">
+                            <h5>Coupe de France de Robotique</h5>
+                            <p>Compétition annuelle où des équipes s'affrontent avec des robots autonomes en France.</p>
+                            <a href="https://fr.wikipedia.org/wiki/Coupe_de_France_de_robotique" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                    <!-- Événement 2 -->
+                    <div class="event-card">
+                        <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" alt="FIRST Robotics Competition">
+                        <div class="event-card-body">
+                            <h5>FIRST Robotics Competition</h5>
+                            <p>Compétition internationale où des lycéens conçoivent et construisent des robots pour des défis.</p>
+                            <a href="https://www.firstinspires.org/robotics/frc" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                    <!-- Événement 3 -->
+                    <div class="event-card">
+                        <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" alt="RoboCup">
+                        <div class="event-card-body">
+                            <h5>RoboCup</h5>
+                            <p>Initiative scientifique avec des compétitions de football robotique.</p>
+                            <a href="https://www.robocup.org/" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                    <!-- Événement 4 -->
+                    <div class="event-card">
+                        <img src="assests\imgs\WIN_20250128_10_36_10_Pro.jpg" alt="FIRST Global Challenge">
+                        <div class="event-card-body">
+                            <h5>FIRST Global Challenge</h5>
+                            <p>Compétition internationale qui rassemble des équipes de 190 pays.</p>
+                            <a href="https://first.global/fgc/" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="resources-section" id="res">
+                <div class="container">
+                    <h2>Ressources en Programmation, Électronique et Robotique</h2>
+                    <div class="resource-category">
+                        <h3>Programmation</h3>
+                        <ul>
+                            <li><a href="https://www.ecolerobots.com/les-ecoles-algora/" target="_blank">Formation en programmation robotique - Algora</a></li>
+                            <li><a href="https://robot-tic.qc.ca/" target="_blank">Ressources en programmation pour la classe - Robot-TIC</a></li>
+                            <!-- Ajoutez d'autres liens ici -->
+                        </ul>
+                    </div>
+                    <div class="resource-category">
+                        <h3>Électronique</h3>
+                        <ul>
+                            <li><a href="https://fr.vittascience.com/learn/" target="_blank">Ressources éducatives en électronique - Vittascience</a></li>
+                            <!-- Ajoutez d'autres liens ici -->
+                        </ul>
+                    </div>
+                    <div class="resource-category">
+                        <h3>Robotique</h3>
+                        <ul>
+                            <li><a href="https://discover.profuturo.education/cl/fr/recurso/robotique-interaction-avec-le-monde-physique/" target="_blank">Robotique : Interaction avec le monde physique - ProFuturo</a></li>
+                            <!-- Ajoutez d'autres liens ici -->
+                        </ul>
+                    </div>
+                    <div class="resource-category">
+                        <h3>Vos Documents PDF</h3>
+                        <ul>
+                            <li><a href="assests/pdfs/basics2.pdf" download>Les bases Arduino part 2</a></li>
+                            <li><a href="assests/pdfs/systemes de communication.pdf" download>Les systemes de communications</a></li>
+                            <!-- Ajoutez d'autres fichiers PDF ici -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="resource-category">
+             
+            </section>
+                        <!-- Section Contact -->
+            <!-- Section Contact -->
+            <section class="contact-section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <!-- Contact Information -->
+                        <div class="col-md-6">
+                            <div class="contact-info">
+                                <h2>Contactez-nous</h2>
+                                <div class="social-links">
+                                    <!-- Instagram Logo -->
+                                    <a href="https://www.instagram.com/robothings_fstm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-icon instagram">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram" class="contact-icon">
+                                    </a>
+                                    
+                                    <!-- WhatsApp Logo -->
+                                    <a href="https://wa.me/+212705782571" target="_blank" class="social-icon whatsapp">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="whatsapp">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Form -->
+                        <div class="col-md-6">
+                            <div class="contact-form">
+                                <h3>Envoyez-nous un message</h3>
+                                <form action="#" method="POST">
+                                    <div class="form-group">
+                                        <label for="name">Nom</label>
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Votre email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" class="form-control" rows="5" placeholder="Votre message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn-submit">Envoyer</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            
+
+            
+
+
+
+            
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>About Us</h3>
+                    <p>We are <strong>Robothings FSTM</strong>, a robotics club dedicated to building and innovating using robotics technology. We focus on projects like line-following robots and more!</p>
+                    <p>Follow us on social media for updates, events, and more:</p>
+                </div>
+        
+                <div class="footer-social">
+                    <h3>Connect with Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/robothings_fstm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-icon instagram">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram" class="contact-icon">
+                        </a>
+                        <a href="https://wa.me/+212705782571" target="_blank" class="social-icon whatsapp">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="whatsapp">
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:alphaanonymous62@gmail.com">contact@robothings.com</a></p>
+                    <p>Phone: +212 705 782 571</p>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap JavaScript Libraries -->
+         <script src="assests/js/script.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
